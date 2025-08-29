@@ -1,0 +1,7 @@
+{
+  "name": "Topic2-NgModules",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
