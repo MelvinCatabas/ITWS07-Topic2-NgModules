@@ -1,1 +1,1 @@
-#Static component interaction using NgModules
+Static component interaction using NgModules
