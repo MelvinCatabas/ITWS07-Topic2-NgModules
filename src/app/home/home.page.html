@@ -1,17 +1,9 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<app-header></app-header>
 
-<ion-content [fullscreen]="true">
-  <!-- Using card component -->
-  <app-card></app-card>
-  <!-- for navigation -->
-  <div class="ion-padding">
-    <ion-button routerLink="/">Home</ion-button>
-    <ion-button routerLink="/about">About</ion-button>
-  </div>
+<ion-content class="ion-padding">
+  <h2>Student List</h2>
+
+  <ion-list>
+    <app-card *ngFor="let student of students" [student]="student"></app-card>
+  </ion-list>
 </ion-content>

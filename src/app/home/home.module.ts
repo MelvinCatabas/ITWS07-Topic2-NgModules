@@ -14,8 +14,8 @@ import { CardComponent } from '../components/card/card.component';
     FormsModule,
     IonicModule,
     HomePageRoutingModule,
-    CardComponent //add this to use the app-card component in home.page.html
-  ],
-  declarations: [HomePage]
+    HomePage 
+  ]
 })
 export class HomePageModule {}
+

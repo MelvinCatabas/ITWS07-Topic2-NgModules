@@ -1,13 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-
 import { IonicModule } from '@ionic/angular';
 
 import { AboutPageRoutingModule } from './about-routing.module';
-
-import { AboutPage } from './about.page';
-import { CardComponent } from '../components/card/card.component';
+import { AboutPage } from './about.page';   // ✅ standalone page
 
 @NgModule({
   imports: [
@@ -15,8 +12,7 @@ import { CardComponent } from '../components/card/card.component';
     FormsModule,
     IonicModule,
     AboutPageRoutingModule,
-    CardComponent //add this to use the app-card component in about.page.html
-  ],
-  declarations: [AboutPage]
+    AboutPage   // ✅ import standalone page here
+  ]
 })
 export class AboutPageModule {}

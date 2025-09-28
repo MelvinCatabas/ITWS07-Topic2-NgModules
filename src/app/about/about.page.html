@@ -1,15 +1,16 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>about</ion-title>
+<ion-header>
+ 
+  <ion-toolbar color="primary">
+    <ion-title>Geolocation Info</ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button> 
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
-<ion-content [fullscreen]="true">
-  <!-- Using card component -->
-  <app-card></app-card> 
-  <!-- for navigation -->
-  <div class="ion-padding">
-    <ion-button routerLink="/">Home</ion-button>
-    <ion-button routerLink="/about">About</ion-button>
-  </div>
+<ion-content class="ion-padding">
+  Latitude: {{lat}} Longitude: {{lng}}
+  
+  <!-- Map Container -->
+  <div id="map"></div>
 </ion-content>
