@@ -4,7 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 
 import { AboutPageRoutingModule } from './about-routing.module';
-import { AboutPage } from './about.page';   // ✅ standalone page
+import { AboutPage } from './about.page';   
 
 @NgModule({
   imports: [
@@ -12,7 +12,7 @@ import { AboutPage } from './about.page';   // ✅ standalone page
     FormsModule,
     IonicModule,
     AboutPageRoutingModule,
-    AboutPage   // ✅ import standalone page here
+    AboutPage  
   ]
 })
 export class AboutPageModule {}
